@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGEODDA Inc. - Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #efe3e3;
+            color: #0b0b0b;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #34495e;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background: #1abc9c;
+            border-radius: 5px;
+        }
+
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .navbar-toggler {
+            display: none;
+            background-color: #1abc9c;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #fff;
+            display: block;
+            width: 25px;
+            height: 2px;
+            margin: 5px 0;
+        }
+
+        .navbar-collapse {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .nav-item {
+            margin-left: 15px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+        }
+        .section p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .post h3 {
+            margin-top: 0;
+        }
+        .read-more {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                display: block;
+            }
+
+            .navbar-collapse {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                background-color: #34495e;
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+            }
+
+            .navbar-nav .nav-item {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .navbar-collapse.show {
+                display: flex;
+            }
+    </style>
+</head>
+<body>
+    header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="index.html">IGEODDA Inc.</a>
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Blog Section -->
+        <div class="section" id="blog">
+            <h2>Blog</h2>
+            <div class="post">
+                <h3>"The Future of Healthcare Staffing: Trends to Watch"</h3>
+                <p>Explore emerging trends in healthcare staffing and how they are shaping the future of patient care and service delivery. This post discusses key developments such as the rise of telemedicine, the integration of AI in staffing solutions, and the impact of healthcare reform on staffing practices. <a href="#" class="read-more">Read more</a></p>
+            </div>
+            
+            <div class="post">
+                <h3>"Harnessing Technology for Efficient Workforce Solutions"</h3>
+                <p>Learn how technological advancements are enhancing workforce management and operational efficiency across various industries. This article covers innovations like automated HR tools, data-driven recruitment strategies, and the benefits of cloud-based workforce management systems. <a href="#" class="read-more">Read more</a></p>
+            </div>
+            
+            <div class="post">
+                <h3>"Top 5 IT Innovations Transforming Businesses Today"</h3>
+                <p>Discover the latest IT innovations that are driving business success and how they can be leveraged for competitive advantage. Topics include blockchain technology, AI and machine learning, IoT, 5G networks, and advanced cybersecurity measures. <a href="#" class="read-more">Read more</a></p>
+            </div>
+            
+            <div class="post">
+                <h3>"Success Stories: How Our Clients Achieved Their Goals"</h3>
+                <p>Read about the success stories of our clients and how our solutions have made a positive impact on their organizations. This post highlights case studies of clients who have transformed their operations through our services. <a href="#" class="read-more">Read more</a></p>
+            </div>
+            
+            <div class="post">
+                <h3>"Best Practices for Professional Development and Training"</h3>
+                <p>Get tips and advice on how to effectively develop and train your workforce to meet the evolving demands of the industry. This guide provides strategies for creating effective training programs, fostering continuous learning, and measuring training success. <a href="#" class="read-more">Read more</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 IGEODDA Inc. All rights reserved. | <a href="contact.html" style="color: #fff;">Contact Us</a>
+    </footer>
+    <script>
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        navbarToggler.addEventListener('click', () => {
+            navbarCollapse.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

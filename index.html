@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGEODDA Inc Employment Agency</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="index.html">IGEODDA Inc</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-center section-box header-box">
+            <h1 class="display-4">Welcome to IGEODDA Employment Agency</h1>
+            <p>Your Gateway to Professional Employment Services.</p>
+        </div>
+    </header>
+
+    <section id="overview" class="container my-5">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row">
+            <div class="col-md-12 service-box">
+                <p><b></b>Welcome to IGEODDA Inc. At IGEODDA Inc., we pride ourselves on delivering a diverse range of specialized services designed to meet the needs of our clients across various industries. Our commitment to excellence is reflected in the expertise and dedication of our professionals.</p>
+                <hr>
+            </div>
+            <div class="col-md-6 service-box">
+                <h4>Healthcare Excellence</h4>
+                <p>Our healthcare division is at the forefront of delivering exceptional care through our team of highly trained professionals. We provide and deploy a wide array of healthcare experts, including Registered Nurses, Personal Support Workers (PSWs), Developmental Support Workers (DSWs), and Cleaners. Our healthcare professionals are equipped to offer compassionate, top-quality care in hospitals, long-term care facilities, and home care environments.</p>
+            </div>
+            <div class="col-md-6 service-box">
+                <h4>IT Solutions and Innovation</h4>
+                <p>IGEODDA Inc. is also a leader in providing advanced IT solutions tailored to enhance business productivity. Our team of IT experts specializes in software development, cloud services integration, and IT service management (ITSM). Whether you need to streamline your operations, develop custom software, or integrate cloud-based solutions, our professionals are dedicated to delivering innovative and reliable IT services that drive success.</p>
+            </div>
+            <div class="col-md-12 service-box">
+                <h4>Comprehensive Workforce Solutions</h4>
+                <p>Beyond healthcare and IT, we offer comprehensive workforce solutions that cater to a wide range of industries. Our skilled professionals are available to support your business with a variety of tasks, from logistical and operational support to facility management and specialized services. We ensure that every deployment meets the highest standards of professionalism and efficiency.</p>
+                <div class="text-center mt-3">
+                    <a href="services.html" class="btn btn-primary">Explore Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3 section-box">
+        <p>&copy; 2024 IGEODDA Inc | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript for Screensaver Effect -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const screensaver = document.createElement('div');
+            screensaver.classList.add('screensaver');
+            document.body.appendChild(screensaver);
+
+            const images = [
+                '/path/to/your/screensaver-image1.jpg',
+                '/path/to/your/screensaver-image2.jpg',
+                '/path/to/your/screensaver-image3.jpg'
+            ];
+
+            let currentImageIndex = 0;
+
+            function changeImage() {
+                if (images.length > 0) {
+                    screensaver.style.backgroundImage = `url(${images[currentImageIndex]})`;
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                }
+            }
+
+            setInterval(changeImage, 5000); // Change image every 5 seconds
+        });
+    </script>
+</body>
+</html>

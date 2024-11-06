@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGEODDA Inc. - Employment Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ebee;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #34495e;
+            padding: 10px 20px;
+        }
+        .navbar-brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar-toggler {
+            display: none;
+            background-color: #1abc9c;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navbar-toggler-icon {
+            background-color: #fff;
+            display: block;
+            width: 25px;
+            height: 2px;
+            margin: 5px 0;
+        }
+        .navbar-collapse {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        .nav-item {
+            margin-left: 15px;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background: #1abc9c;
+            border-radius: 5px;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 40px 0;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 55px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #1a1a2e;
+            text-align: center;
+            font-weight: 700;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 2em;
+            border-bottom: 3px solid #f0a500;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-weight: 400;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+        .highlight {
+            font-weight: 700;
+            color: #f0a500;
+        }
+        footer {
+            background: #1a1a2e;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                display: block;
+            }
+            .navbar-collapse {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                background-color: #34495e;
+            }
+            .navbar-nav {
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+            }
+            .navbar-nav .nav-item {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            .navbar-collapse.show {
+                display: flex;
+            }
+        }
+    </style>
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.style.display === "none") {
+                desc.style.display = "block";
+            } else {
+                desc.style.display = "none";
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+
+            navbarToggler.addEventListener('click', () => {
+                navbarCollapse.classList.toggle('show');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navbar-brand" href="index.html">IGEODDA Inc.</a>
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="section" id="overview">
+            <h2>Overview</h2>
+            <p>IGEODDA Inc. is a distinguished employment agency founded by professionals with deep expertise in healthcare and software engineering <i class="fa fa-industry" aria-hidden="true"></i>. Established through collaboration, our company represents a unique intersection of healthcare excellence and technological innovation. Our mission is to provide top-tier employment solutions by leveraging the extensive experience and comprehensive skills of our founding professionals.</p>
+        </div>
+        
+        <div class="section" id="founders">
+            <h2>Founders</h2>
+            <p><span class="highlight">Healthcare Professional:</span> Our co-founder, a highly experienced healthcare worker, brings a wealth of knowledge in healthcare service delivery, patient care, and management. Their extensive background includes working in various capacities within both public and private healthcare sectors, where they have been instrumental in improving patient outcomes and implementing best practices in healthcare services.</p>
+            <p><span class="highlight">Software Engineer:</span> Our other co-founder, a skilled software engineer, has a robust background in developing and implementing technological solutions across various industries. With experience in both large and small organizations, they have played a crucial role in designing, deploying, and maintaining software solutions that drive operational efficiency and innovation.</p>
+        </div>
+        
+        <div class="section" id="collaboration-expertise">
+            <h2>Collaboration and Expertise</h2>
+            <p>The fusion of our founders’ expertise represents a strategic advantage for IGEODDA Inc. By combining healthcare and technology, we have established a unique employment agency that addresses the complex needs of both sectors. Our founders have consulted and collaborated with numerous organizations, contributing to projects that range from improving healthcare service delivery to advancing technological solutions. Their collective experience has shaped our approach to workforce solutions, ensuring that we deliver services that meet the highest standards of quality and effectiveness.</p>
+        </div>
+        
+        <div class="section" id="our-services">
+            <h2>Our Services</h2>
+            <p>At IGEODDA Inc., we offer a broad spectrum of employment services, driven by our founder's commitment to excellence and innovation. Our services include:</p>
+            <ul>
+                <li><span class="highlight">Healthcare Staffing:</span> We provide highly trained healthcare professionals, including Registered Nurses (RNs), Personal Support Workers (PSWs), Developmental Support Workers (DSWs), and Cleaners. Each member of our healthcare staff is equipped with the skills and knowledge to deliver exceptional care, thanks to our rigorous recruitment process.</li>
+                <li><span class="highlight">Technology Solutions:</span> Our technology solutions include IT support, software development, and technical consulting. We offer services tailored to meet the specific needs of businesses and healthcare organizations, leveraging the latest advancements in technology to enhance operational efficiency and effectiveness.</li>
+            </ul>
+        </div>
+        
+        <div class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>We are committed to providing personalized support to our clients and partners. For inquiries, please contact us at:</p>
+            <p>Email: <a href="mailto:info@igeodda.com">info@igeodda.com</a></p>
+            <p>Phone: +1-289-686-2681</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 IGEODDA Inc. All rights reserved. | <a href="privacy.html" style="color: #fff;">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
